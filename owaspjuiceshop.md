@@ -34,4 +34,18 @@ Question #1: Log into the administrator account!
      alt="OWASP_JUICE_flag1_icon"
      style="float: left; margin-right: 10px;" />
      
-     
+Answer-``` 32a5e0f21372bcc1000a6088b93b458e41f0e02a```
+
+Question #2: Log into the Bender account!
+
+Similar to what we did in Question #1, we will now log into Bender's account! Capture the login request again, but this time we will put: bender@juice-sh.op'-- as the email. 
+
+<img src="OWASP-flag-2.png"
+     alt="OWASP_JUICE_flag2_icon"
+     style="float: left; margin-right: 10px;" />
+
+Answer-```fb364762a3c102b2db932069c0e6b78e738d4066```
+
+# Task 4  Who broke my lock?!
+Question #1: Bruteforce the Administrator account's password!
+
