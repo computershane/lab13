@@ -185,4 +185,55 @@ It is common practice that the search bar will send a request to the server in w
 Answer-```9aaf4bbea5c30d00a1f5bbcfce4db6d4b0efe0bf```
 
 Question #2: Perform a persistent XSS!
+     
+`First, login to the admin account.
 
+We are going to navigate to the "Last Login IP" page for this attack`
+
+`It should say the last IP Address is 0.0.0.0 or 10.x.x.x 
+
+As it logs the 'last' login IP we will now logout so that it logs the 'new' IP.
+
+Make sure that Burp intercept is on, so it will catch the logout request.
+
+We will then head over to the Headers tab where we will add a new header:
+
+True-Client-IP
+<iframe src="javascript:alert(`xss`)">`
+
+
+<img src="OWASP-flag-12.png"
+     alt="OWASP_JUICE_flag12_icon"
+     style="float: left; margin-right: 10px;" />
+     
+     Answer-```149aa8ce13d7a4a8a931472308e269c94dc5f156```
+     
+Question #3: Perform a reflected XSS!
+
+`First, we are going to need to be on the right page to perform the reflected XSS!
+
+Login into the admin account and navigate to the 'Order History' page. `
+
+`From there you will see a "Truck" icon, clicking on that will bring you to the track result page. You will also see that there is an id paired with the order.   
+
+We will use the iframe XSS, <iframe src="javascript:alert(`xss`)">, in the place of the 5267-f73dcd000abcc353
+
+After submitting the URL, refresh the page and you will then get an alert saying XSS!
+
+<img src="OWASP-flag-13.png"
+     alt="OWASP_JUICE_flag13_icon"
+     style="float: left; margin-right: 10px;" />
+     
+Answer-```23cefee1527bde039295b2616eeb29e1edc660a0```
+
+# Task 8  Exploration!
+
+`If you wish to tackle some of the harder challenges that were not covered within this room, check out the /#/score-board/ section on Juice-shop. Here you can see your completed tasks as well as other tasks in varying difficulty.`
+
+Access the /#/score-board/ page
+
+<img src="OWASP-flag-14.png"
+     alt="OWASP_JUICE_flag14_icon"
+     style="float: left; margin-right: 10px;" />
+
+Answer-```7efd3174f9dd5baa03a7882027f2824d2f72d86e```
