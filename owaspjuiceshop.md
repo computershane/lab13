@@ -49,3 +49,103 @@ Answer-```fb364762a3c102b2db932069c0e6b78e738d4066```
 # Task 4  Who broke my lock?!
 Question #1: Bruteforce the Administrator account's password!
 
+had to right click to ```send to intruder```
+
+Password-```admin123```
+
+<img src="OWASP-flag-3.png"
+     alt="OWASP_JUICE_flag3_icon"
+     style="float: left; margin-right: 10px;" />
+     
+Answer-```c2110d06dc6f81c67cd8099ff0ba601241f1ac0e```
+
+Question #2: Reset Jim's password!
+
+OSINT challenge, wiki shows James T. Kirk, brother is ```George Samuel Kirk```
+
+Password-```Samuel```
+
+<img src="OWASP-flag-4.png"
+     alt="OWASP_JUICE_flag4_icon"
+     style="float: left; margin-right: 10px;" />
+
+Answer-```094fbc9b48e525150ba97d05b942bbf114987257```
+
+# Task 5  AH! Don't look!
+
+Question #1: Access the Confidential Document!
+
+<img src="OWASP-flag-5.png"
+     alt="OWASP_JUICE_flag5_icon"
+     style="float: left; margin-right: 10px;" />
+
+Answer-```edf9281222395a1c5fee9b89e32175f1ccf50c5b```
+
+Question #2: Log into MC SafeSearch's account!
+
+<img src="OWASP-flag-6.png"
+     alt="OWASP_JUICE_flag6_icon"
+     style="float: left; margin-right: 10px;" />
+
+Answer-```66bdcffad9e698fd534003fbb3cc7e2b7b55d7f0```
+
+Question #3: Download the Backup file!
+
+<img src="OWASP-flag-7.png"
+     alt="OWASP_JUICE_flag7_icon"
+     style="float: left; margin-right: 10px;" />
+     
+Answer-```bfc1e6b4a16579e85e06fee4c36ff8c02fb13795```
+
+#Task 6  Who's flying this thing?
+
+Modern-day systems will allow for multiple users to have access to different pages. Administrators most commonly use an administration page to edit, add and remove different elements of a website. You might use these when you are building a website with programs such as Weebly or Wix.  
+
+When Broken Access Control exploits or bugs are found, it will be categorised into one of two types:
+
+Horizontal Privilege Escalation
+Occurs when a user can perform an action or access data of another user with the same level of permissions.
+Vertical Privilege Escalation
+Occurs when a user can perform an action or access data of another user with a higher level of permissions.
+
+Question #1: Access the administration page!
+
+`We are then going to refresh the page and look for a javascript file for main-es2015.js
+
+We will then go to that page at: http://10.10.155.208/main-es2015.js`
+
+To get this into a format we can read, click the { } button at the bottom  
+
+Now search for the term "admin" 
+
+`You will come across a couple of different words containing "admin" but the one we are looking for is "path: administration"`
+
+<img src="OWASP-flag-8.png"
+     alt="OWASP_JUICE_flag8_icon"
+     style="float: left; margin-right: 10px;" />
+
+Answer-```946a799363226a24822008503f5d1324536629a0```
+
+Question #2: View another user's shopping basket!
+
+<img src="OWASP-flag-9.png"
+     alt="OWASP_JUICE_flag9_icon"
+     style="float: left; margin-right: 10px;" />
+
+`Now, we are going to change the number 1 after /basket/ to 2`
+`It will now show you the basket of UserID 2. You can do this for other UserIDs as well, provided that they have one!`
+
+Answer-```41b997a36cc33fbe4f0ba018474e19ae5ce52121```
+
+Question #3: Remove all 5-star reviews!
+
+`Navigate to the  http://10.10.155.208/#/administration page again and click the bin icon next to the review with 5 stars!`
+
+<img src="OWASP-flag-10.png"
+     alt="OWASP_JUICE_flag10_icon"
+     style="float: left; margin-right: 10px;" />
+     
+Answer-```50c97bcce0b895e446d61c83a21df371ac2266ef```
+
+#Task 7  Where did that come from?
+
